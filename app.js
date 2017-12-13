@@ -13,6 +13,7 @@ console.log('Command:', command);
 console.log('Process', process.argv);
 console.log('Yargs', argv);
 
+//IF ELSE statements that check for the parameter inputs in the terminal
 if (command === 'add'){
     console.log("Adding new note");
 } else if(command === 'list'){
