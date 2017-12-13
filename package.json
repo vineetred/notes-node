@@ -1,0 +1,19 @@
+{
+  "name": "notes-node",
+  "version": "1.0.0",
+  "description": "Just a simple notes app written using Node.JS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vineetred/notes-node.git"
+  },
+  "author": "Vineet Reddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vineetred/notes-node/issues"
+  },
+  "homepage": "https://github.com/vineetred/notes-node#readme"
+}
