@@ -10,19 +10,20 @@ const notes = require('./notes.js');
 const argv = yargs.argv;
 var command = process.argv[2];
 console.log('Command:', command);
-console.log('Process', process.argv);
+// console.log('Process', process.argv);
 console.log('Yargs', argv);
 
 //IF ELSE statements that check for the parameter inputs in the terminal
 if (command === 'add'){
-    console.log("Adding new note");
+    notes.addNote(argv.title, argv.body);
 } else if(command === 'list'){
-    console.log('Listing all notes');
-}  else if(command === 'remove') {
-    console.log("Note is removed");
+    notes.getAll();
+} else if(command === 'remove') {
+    notes.removeNote(argv.title);
 } else if(command ==='read') {
-    console.log("Fetching data ------>");
+    notes.getNote(argv.title);
 } else {
     console.log("Command not recogonised");
 }
 
+ 
