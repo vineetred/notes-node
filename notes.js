@@ -35,8 +35,6 @@ var addNote = (title, body) => {
         return note;   
     }
     
-
-
 };
 
 var getAll = () => {
@@ -48,8 +46,15 @@ var getNote = (title) => {
 };
 
 var removeNote = (title) => {
-    console.log("Removing note: ", title);
-
+    var notes = fetchNotes();
+    var filteredNotes = notes.filter((note) => note.title != title);
+    saveNotes(filteredNotes);
+    if(notes.length === filteredNotes.length){
+        console.log("Could not find note!");
+    }
+    else {
+        console.log(`Removed note with title: "${title}"`);
+    }
 };
 module.exports = {
     addNote,
