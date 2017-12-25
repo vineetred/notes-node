@@ -15,7 +15,15 @@ console.log('Yargs', argv);
 
 //IF ELSE statements that check for the parameter inputs in the terminal
 if (command === 'add') {
-    notes.addNote(argv.title, argv.body);
+    var note = notes.addNote(argv.title, argv.body);
+    if (note) {
+        console.log("Note has been created");
+        console.log("------");
+        console.log(`Title: ${note.title}`);
+        console.log(`Body: ${note.body} \n`);
+    } else {
+        console.log("Note already exists");
+    }
 } else if (command === 'list') {
     notes.getAll();
 } else if (command === 'remove') {
