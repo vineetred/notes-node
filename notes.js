@@ -60,6 +60,7 @@ var removeNote = (title) => {
 };
 
 var logNote = (note) => {
+    debugger;
     console.log("------FOUND------");
     console.log(`Title: ${note.title}`);
     console.log(`Body: ${note.body} \n`);
