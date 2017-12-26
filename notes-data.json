@@ -1,1 +1,19 @@
-[{"title":"Starbucks","body":"Hey there"},{"title":"Coffee","body":"I miss drinking coffee with Anuka :("}]
+[{
+    "title": "Starbucks",
+    "body": "Hey there"
+}, {
+    "title": "Coffee",
+    "body": "I miss drinking coffee with Anuka :("
+}, {
+    "title": "Terminal",
+    "body": "Added this note from the terminal"
+}, {
+    "title": "Testing",
+    "body": "Hello world"
+}, {
+    "title": "College",
+    "body": "College is so much better than home. Scary to think what will happen to us after college."
+}, {
+    "title": "Reddit",
+    "body": "Horrifyingly addictive"
+}]

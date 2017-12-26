@@ -18,9 +18,7 @@ if (command === 'add') {
     var note = notes.addNote(argv.title, argv.body);
     if (note) {
         console.log("Note has been created");
-        console.log("------");
-        console.log(`Title: ${note.title}`);
-        console.log(`Body: ${note.body} \n`);
+        notes.logNote(note);
     } else {
         console.log("Note already exists");
     }
@@ -29,9 +27,10 @@ if (command === 'add') {
 } else if (command === 'remove') {
     notes.removeNote(argv.title);
 } else if (command === 'read') {
-    notes.getNote(argv.title);
+    var read = notes.getNote(argv.title);
+    if(read) {
+        notes.logNote(read);
+    }
 } else {
     console.log("Command not recogonised");
 }
-
-//HI FROM MAC
