@@ -11,6 +11,7 @@ const argv = yargs.argv;
 var command = argv._[0];
 console.log('Command:', command);
 // console.log('Process', process.argv);
+//Written this using atom!
 console.log('Yargs', argv);
 
 //IF ELSE statements that check for the parameter inputs in the terminal
