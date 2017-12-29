@@ -9,10 +9,7 @@ const notes = require('./notes.js');
 
 const argv = yargs.argv;
 var command = argv._[0];
-console.log('Command:', command);
-// console.log('Process', process.argv);
-//Written this using atom!
-console.log('Yargs', argv);
+
 
 //IF ELSE statements that check for the parameter inputs in the terminal
 if (command === 'add') {
@@ -24,7 +21,10 @@ if (command === 'add') {
         console.log("Note already exists");
     }
 } else if (command === 'list') {
-    notes.getAll();
+    var allNotes = notes.getAll();
+    console.log(`Printing ${allNotes.length} note(s)`);
+    allNotes.forEach((note) => notes.logNote(note));
+
 } else if (command === 'remove') {
     notes.removeNote(argv.title);
 } else if (command === 'read') {

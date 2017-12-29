@@ -1,4 +1,3 @@
-console.log("Starting notes.js!");
 var fs = require('fs');
 
 var fetchNotes = () => {
@@ -24,7 +23,7 @@ var addNote = (title, body) => {
         title,
         body,
     };
-    
+
     //Checks if title is duplicate
     var duplicateNotes = notes.filter((note) => note.title === title);
 
@@ -32,9 +31,9 @@ var addNote = (title, body) => {
         //This pushes the note body and title into notes-data.json file
         notes.push(note);
         saveNotes(notes);
-        return note;   
+        return note;
     }
-    
+
 };
 
 var getAll = () => {
