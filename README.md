@@ -8,3 +8,7 @@ To install the modules that you might not have, run
 npm install
 ```
 and you are good to go!
+
+```
+node app.js add --title="Sample" --body"This is a sample body"
+```
