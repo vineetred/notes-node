@@ -10,5 +10,5 @@ npm install
 and you are good to go!
 
 ```
-node app.js add --title="Sample" --body"This is a sample body"
+node app.js add --title="Sample" --body="This is a sample body"
 ```
